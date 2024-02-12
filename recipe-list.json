@@ -1,0 +1,35 @@
+{
+    "recipes" : [
+        {
+            "id" : 1,
+            "title" : "Aloo Curry",
+            "category" : "Curry",
+            "cusine_style" : "Indian",
+            "prep_time" : 89,
+            "ingredients" : ["Aloo","Masala","Tamato"],
+            "steps" : ["Cut the aloo in half","Cut the masala in half","Cut the tamato in half"],
+            "image" : "https://tinyurl.com/54stmusm"
+        },
+        {
+            "id" : 2,
+            "title" : "Aloo Chutney",
+            "category" : "Curry",
+            "cusine_style" : "Indian",
+            "prep_time" : "21",
+            "ingredients" : ["Aloo","Masala","Tamato"],
+            "steps" : ["Cut the aloo in half","Cut the masala in half","Cut the tamato in half"],
+            "image" : "https://tinyurl.com/54stmusm"
+        },
+        {
+            "id" : 3,
+            "title" : "Upmaa",
+            "category" : "Curry",
+            "cusine_style" : "Indian",
+            "prep_time" : "21",
+            "ingredients" : ["Aloo","Masala","Tamato"],
+            "steps" : ["Cut the aloo in half","Cut the masala in half","Cut the tamato in half"],
+            "image" : "https://tinyurl.com/yufn4rmu"
+        }
+    ],
+    "lastUsedId" : 10
+}

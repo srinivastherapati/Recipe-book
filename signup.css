@@ -1,0 +1,14 @@
+.login{
+    background : #fffceb;
+    border : 1px solid black;
+    padding : 30px;
+    border-radius : 10px;
+}
+
+.background-img{
+    background-image: url('images/background.jpeg');
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    overflow-x: hidden
+}

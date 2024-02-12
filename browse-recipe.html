@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="browse.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="browse-recipe.js" ></script>
+</head>
+
+<body onload="readLocalJsonFileWithAjax()">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Recipe Book</a>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link" href="#">Browse Recipes</a>
+                        </li>
+                        <li onclick="navigateToAdd()" class="nav-item">
+                            <a class="nav-link" href="add-recipe.html">Add Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign In/Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container ">
+        <div class="row mb-5">
+            <div class="col d-flex justify-content-center">
+                <div class="d-flex w-100 mt-5 search-container">
+                    <input type="text" id="searchBox" class="search-box w-100" placeholder="Search...">
+                    <img src="images/search-line-icon.svg" class="search-icon" width="30px" heigh="30px" alt="SVG Image">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div>
+                    <h2>Filter</h2>
+                    <div class="filter-section">
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="formCategory">Category</label>
+                                <select class="form-control" id="formCategory">
+                                    <option>All</option>
+                                    <option>Main Course</option>
+                                    <option>Desserts</option>
+                                    <option>Starters</option>
+                                    <option>Drinks</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="formCusine">Cusine Type</label>
+                                <select class="form-control" id="formCusine">
+                                    <option>All</option>
+                                    <option>Indian</option>
+                                    <option>Mexican</option>
+                                    <option>Chineese</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="formTime">Prep Time below</label>
+                                <select class="form-control" id="formTime">
+                                    <option>All</option>
+                                    <option>60</option>
+                                    <option>90</option>
+                                    <option>120</option>
+                                    <option>200</option>
+                                </select>
+                            </div>
+                           
+                        </form>
+                        <button onclick="applyFilters()" class="btn btn-primary"> Apply </button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div id="recipe-container-main" class="d-flex flex-wrap justify-content-between">
+                    <!-- <div class="recipe-container">
+                        <img class="recipe-img" src="https://tinyurl.com/54stmusm">
+                        <div class="text-center recipe-details">
+                            <h3 >Alooo Curry</h3>
+                            <p class="recipe-attr">Category : Main Course</p>
+                            <p class="recipe-attr">Prep Time : 89 min</p>
+                            <div class="d-flex justify-content-around mt-3">
+                                <button class="btn btn-outline-primary">Edit</button>
+                                <button class="btn btn-outline-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>  -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+</body>
+
+</html>

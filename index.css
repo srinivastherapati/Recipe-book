@@ -1,0 +1,61 @@
+body{
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+img{
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.mc-intro-text{
+    font-size : 20px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.mc-quote{
+    font-size : 28px;
+    color : #e67e22;
+}
+
+.image-url-input{
+    width: 100%;
+    border : 1px solid  #bdc3c7;
+    padding : 10px;
+    border-radius: 5px;
+    margin : 8px 0px;
+}
+
+.quote{
+    font-style: italic;
+    font-size : 30px;
+}
+
+.signup-page{
+    min-height: 100vh;
+}
+.nav-link{
+    transition: font-size 0.6s ease-in-out;
+}
+.nav-link:hover{
+    font-size : 18px;
+}
+
+.btn{
+    transition: font-size 0.6s ease-in-out;
+}
+
+.zoomable {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoomable:hover {
+    transform: scale(1.1);
+}
+
+.bg-orange-light{
+    background-color: rgba(247, 197, 46, 0.855);
+}

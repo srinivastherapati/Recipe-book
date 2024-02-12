@@ -1,0 +1,44 @@
+
+.search-container{
+    border: 2px solid #bdc3c7;
+    padding : 5px 15px;
+    border-radius: 10px;
+}
+.recipe-container{
+    background-color: rgba(247, 197, 46, 0.855);
+    padding : 15px;
+    border-radius: 10px;
+    cursor:  pointer !important;
+    margin : 15px;
+}
+.recipe-details{
+    line-height: 10px;
+}
+.recipe-attr{
+    font-size: 16px;
+}
+.search-box{
+    padding : 10px;
+    border: 0;
+    outline: 0;
+}
+
+.search-box:focus{
+    outline: none !important;
+}
+
+.search-icon{
+    color : #bdc3c7;
+    cursor: pointer;
+}
+
+.recipe-img{
+    width : 250px;
+}
+
+.filter-section{
+    margin-bottom: 12px;
+}
+.filter-heading{
+    margin-bottom : 5px;
+}

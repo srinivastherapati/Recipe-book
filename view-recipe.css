@@ -1,0 +1,11 @@
+.img-main{
+    max-width: 900px !important;
+    max-height: 600px;
+}
+.steps-title{
+    font-size : 20px;
+    margin-bottom : 4px;
+}
+.step{
+    font-size : 16px;
+}
